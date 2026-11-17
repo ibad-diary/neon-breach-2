@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEON BREACH — break the wall, draft upgrades, beat the Core</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #03030c;
+      color: #e8f4ff;
+      font-family: monospace, ui-monospace, monospace;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    canvas {
+      width: 960px;
+      height: 640px;
+      max-width: 96vw;
+      max-height: 78vh;
+      display: block;
+      background: #050514;
+      border: 1px solid #2b3a8f;
+      box-shadow: 0 0 42px rgba(34, 211, 238, 0.22), 0 0 90px rgba(255, 45, 120, 0.10);
+      cursor: crosshair;
+    }
+    #status {
+      font-size: 14px;
+      color: #8ea2c8;
+      min-height: 18px;
+      text-align: center;
+    }
+    footer {
+      font-size: 12px;
+      color: #5a6aa0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="game" width="960" height="640" aria-label="Neon Breach game board"></canvas>
+  <p id="status" aria-live="polite"></p>
+  <footer>NEON BREACH · arrows / mouse to move · SPACE to launch · P pause · M mute</footer>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
